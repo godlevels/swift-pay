@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-gray text-2xl;
+  }
+  .h2 {
+    @apply text-[46px] font-medium leading-tight;
+  }
+  .btn {
+    @apply h-[50px] flex justify-center items-center px-3 rounded-md text-[16px] font-semibold transition-all;
+  }
+
+  .btnget {
+    @apply h-[40px] flex justify-center items-center px-8 rounded-md text-[16px] font-semibold transition-all;
+  }
+
+  .btnlog {
+    @apply h-[40px] flex justify-center items-center px-14 rounded-md text-[16px] font-semibold transition-all;
+  }
+
+  .btn-outline { 
+    @apply bg-transparent border hover:bg-transparent;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-hover;
+  }
+
+  .serviceSlider .swiper-button-prev,
+  .serviceSlider .swiper-button-next {
+    @apply bg-primary text-white top-[95%] w-[123px] h-[46px] rounded-[50%] z-20;
+  }
+  .serviceSlider .swiper-button-prev {
+    @apply left-[23%] md:left-[35%] lg:left-[40%];
+  }
+  .serviceSlider .swiper-button-next {
+    @apply right-[23%] md:right-[35%] lg:right-[40%];
+  }
+  .serviceSlider .swiper-button-prev:after,
+  .serviceSlider .swiper-button-next:after {
+    @apply text-lg;
+  }
+}
+ 
