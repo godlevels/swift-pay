@@ -33,7 +33,8 @@ module.exports = {
           hover: '#e45a03',
         },
         gray: '#333333',
-        white: '#ffffff'
+        graye: '#6D6E6E',
+        whyte: '#ffffff'
       },
       backgroundImage: {
         // hero: "url('/img/hero/hero-bg.png')",

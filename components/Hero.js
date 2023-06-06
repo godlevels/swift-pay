@@ -1,6 +1,6 @@
 import Image from "next/image";
 import frame1 from '../public/img/hero/frame.svg';
-import frame2 from '../public/img/hero/frame2.svg';
+import frame2 from '../public/img/hero/groupss.jpg';
 import frame3 from '../public/img/hero/frame.svg';
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Header from './Header';
@@ -8,9 +8,9 @@ import Header from './Header';
 
 const Hero = () => {
   return (
-    <section className="lg:bg-hero lg:bg-cover lg:bg-no-repeat min-h-[400px] lg:min-h-[605px]">
+    <section className="lg:bg-hero lg:bg-cover lg:bg-no-repeat min-h-[400px] lg:min-h-[600px]">
       <Header />
-      <div className="min-h-[400px] lg:h-[605px]">
+      <div className="min-h-[400px] lg:h-[600px]">
         <div className="pt-16 lg:pt-40">
           {/* <div className="hidden lg:flex items-center justify-start">
             <Image src={frame1} alt="" width={500} height={500} />
@@ -21,14 +21,14 @@ const Hero = () => {
               <p className="text-center text-[20px] text-[#6D6E6E] my-7">Carry out all financial transaction on one platform, <br /> fast and easy, without hassles.</p>
             </div>
             <div className="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5">
-              <button className="btnlog btn-primary">Login</button>
-              <button className="btnget btn-outline flex items-center gap-2">Get Started <span className="flex items-center"><AiOutlineArrowRight /></span></button>
+              <button className="btnlog btn-outline">Login</button>
+              <button className="btnget btn-primary flex items-center gap-2">Get Started <span className="flex items-center mt-1"><AiOutlineArrowRight /></span></button>
             </div>
             <div>
-              <Image src={frame2} width={900} height={900} alt="" />
+              <Image className="lg:h-[400px] hidden lg:flex overflow-hidden" src={frame2} width={500} alt="" />
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   )
