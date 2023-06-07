@@ -43,4 +43,8 @@
     @apply text-lg;
   }
 }
+
+.ReactCollapse--collapse {
+  transition: height 800ms;
+}
  

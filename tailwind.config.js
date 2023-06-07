@@ -37,13 +37,7 @@ module.exports = {
         whyte: '#ffffff'
       },
       backgroundImage: {
-        // hero: "url('/img/hero/hero-bg.png')",
-        pets: "url('/img/pets/pets-bg.png')",
-        services: "url('/img/services/bg.png')",
-        adoption: "url('/img/adoption/bg.png')",
-        newsletterYellow: "url('/img/newsletter/bg-yellow.svg')",
-        newsletterOrange: "url('/img/newsletter/bg-orange.svg')",
-        footer: "url('/img/footer/bg.svg')",
+        test: "url('/img/testimony/bgs.svg')",
       },
     },
   },

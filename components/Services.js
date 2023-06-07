@@ -41,15 +41,15 @@ const Services = () => {
       <div className="container mx-auto">
         <div className="text-center py-6 lg:py-12">
           <h1 className="text-gray text-[25px] lg:text-[56px] font-bold">Why Use SwiftPay</h1>
-          <p className="text-center text-graye text-[15px] lg:text-[20px] font-semibold leading-5 py-2 lg:py-4">All the amazing features we offer our <br /> customers at <span className="text-primary">SwiftPay</span></p>
+          <p className="text-center text-graye text-[15px] lg:text-[20px] font-semibold leading-5 py-2 lg:py-8">All the amazing features we offer our <br /> customers at <span className="text-primary">SwiftPay</span></p>
         </div>
 
-        <div className="flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-[25px] pb-10 lg:pb-0">
+        <div className="flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-[25px] pb-10">
           {services.map((serv, servIndex)=> {
-            const { image, tit, des } = serv
+            const { image, tit, des } = serv 
             return (
               <div key={servIndex}>
-                <div onClick={()=> setIndex(servIndex)} className={`${index === servIndex && 'bg-gray shadow-2xl'} max-w-[700px] h-[250px] flex flex-col justify-center mx-auto px-[20px] rounded-[12px] cursor-pointer transition-all bg-whyte`}>
+                <div onClick={()=> setIndex(servIndex)} className={`${index === servIndex && 'bg-black/20 shadow-2xl'} max-w-[300px] h-[250px] flex flex-col justify-center mx-auto px-[20px] rounded-[12px] cursor-pointer transition-all bg-whyte`}>
                   <Image className="w-[30px] lg:w-[50px]" src={image} alt="" />
                   <div className={`${index === servIndex && 'text-blue'} text-[16px] text-primary font-bold`}>{tit}</div>
                   <p className="text-[14px] text-graye font-bold leading-5">{des}</p>
