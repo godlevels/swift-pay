@@ -49,9 +49,9 @@ const Faq = () => {
   return (
     <section className="bg-blue min-h-[400px] lg:min-h-[500px]">
       <div className="container mx-auto pt-14">
-        <h1 className="text-[48px] text-gray text-center font-bold">Frequently Asked Questions (FAQs)</h1>
+        <h1 className="lg:text-[48px] text-gray text-center font-bold">Frequently Asked Questions (FAQs)</h1>
 
-        <div className="px-[40px] max-w-[800px] flex flex-col gap-y-6 py-20">
+        <div className="lg:px-[40px] lg:max-w-[800px] flex flex-col gap-y-6 py-20">
           {accordionData.map((data, i) => {
             return (
               <Accordion key={i} open={i === open} title={data.title} desc={data.desc} toggle={()=>toggle(i)} />

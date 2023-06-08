@@ -3,7 +3,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 const Accordion = ({ open, toggle, title, desc }) => {
     return (
         <div>
-            <div className="bg-whyte py-[10px] px-[30px] outline outline-graye rounded-sm flex justify-between items-center cursor-pointer w-[1050px]" onClick={toggle}>
+            <div className="bg-whyte py-[10px] px-[30px] outline outline-graye rounded-sm flex justify-between items-center cursor-pointer lg:w-[1050px]" onClick={toggle}>
                 <p className="text-[20px] font-semibold">{title}</p>
                 <div className="text-[20px]">
                     {open ? <AiOutlineMinus /> : <AiOutlinePlus /> }
